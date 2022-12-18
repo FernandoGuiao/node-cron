@@ -1,5 +1,6 @@
 import cron from 'node-cron';
 
 cron.schedule(`*/1 * * * *`, async () => {
-  console.log(`running your task...`);
+  //php artisan:
+    await exec('php artisan schedule:run');
 });
